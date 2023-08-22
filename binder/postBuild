@@ -2,6 +2,8 @@
 
 set -ex
 
+export NODE_OPTIONS=--openssl-legacy-provider
+
 # differentiate github icons
 jupyter serverextension disable --py jupyter_offlinenotebook --sys-prefix
 jupyter nbextension disable --py jupyter_offlinenotebook --sys-prefix
