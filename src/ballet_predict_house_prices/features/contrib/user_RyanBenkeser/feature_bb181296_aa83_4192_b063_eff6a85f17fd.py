@@ -1,5 +1,5 @@
 from ballet import Feature
-from ballet.eng.sklearn import SimpleImputer
+from ballet.eng.external.sklearn import SimpleImputer
 
 input = ["Year Built"]
 transformer = SimpleImputer(
