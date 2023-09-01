@@ -34,8 +34,8 @@ def load_data(input_dir=None):
             fy.lwhere(tables, name=targets_table_name))
         y_df = load_table_from_config(input_dir, targets_config)
     else:
-        source = 'https://s3.amazonaws.com/mit-dai-ballet/ames/AmesHousing.txt'
-        df = pd.read_csv(source, sep='\t')
+        source = 'https://raw.githubusercontent.com/wblakecannon/ames/master/data/housing.csv'
+        df = pd.read_csv(source)
         X_df = df.drop('SalePrice', axis=1)
         y_df = df['SalePrice']
 
